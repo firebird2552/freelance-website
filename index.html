@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Fordorth's Webdesign</title>
+  </head>
+  <body>
+    <div id="valueModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Value Package</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="text-justify">
+              <div class="form-group form-group-lg">
+                <label class="form-check-label">
+                  Pages:
+                </label>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="onePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="onePageCheck" class="form-check-label">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="twoPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="twoPageCheck" class="form-check-label">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="threePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="threePageCheck" class="form-check-label">3</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="cssCheck"
+                    class="form-check-input"
+                    id="cssCheck"
+                    checked
+                    disabled
+                  />
+                  <label for="cssCheck" class="form-check-label">Styling</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="jsCheck"
+                    class="form-check-input"
+                    id="jsCheck"
+                    checked
+                    disabled
+                  />
+                  <label for="jsCheck" class="form-check-label"
+                    >JavaScript</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="lastName"
+                      id="lastName"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="companyName"
+                      id="companyName"
+                      class="form-control"
+                      placeholder="Company Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="companyWebsite"
+                      id="companyWebsite"
+                      class="form-control"
+                      placeholder="Company Website"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="email@email.com"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="phoneNumber"
+                      id="phoneNumber"
+                      class="form-control"
+                      placeholder="+1 (999)999-9999 "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="description"
+                  id="siteDesciption"
+                  rows="3"
+                  placeholder="A brief description of the project. This should include deadline. color scheme. Any other details you think might be important"
+                ></textarea>
+              </div>
+              <div class="btn-group btn-block">
+                <a role="button" class="btn btn-primary btn-block">
+                  Submit Request
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="premiumModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Premium Package</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="text-justify">
+              <div class="form-group form-group-lg">
+                <label class="form-check-label">
+                  Pages:
+                </label>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="onePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="onePageCheck" class="form-check-label">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="twoPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="twoPageCheck" class="form-check-label">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="threePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="threePageCheck" class="form-check-label">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="fourPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="fourPageCheck" class="form-check-label">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="fivePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="fivePageCheck" class="form-check-label">5</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="cssCheck"
+                    class="form-check-input"
+                    id="cssCheck"
+                    checked
+                    disabled
+                  />
+                  <label for="cssCheck" class="form-check-label">Styling</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="jsCheck"
+                    class="form-check-input"
+                    id="jsCheck"
+                    checked
+                    disabled
+                  />
+                  <label for="jsCheck" class="form-check-label"
+                    >JavaScript</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="databaseCheck"
+                    class="form-check-input"
+                    id="databaseCheck"
+                    checked
+                  />
+                  <label for="databaseCheck" class="form-check-label"
+                    >database</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="lastName"
+                      id="lastName"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="companyName"
+                      id="companyName"
+                      class="form-control"
+                      placeholder="Company Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="companyWebsite"
+                      id="companyWebsite"
+                      class="form-control"
+                      placeholder="Company Website"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="email@email.com"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="phoneNumber"
+                      id="phoneNumber"
+                      class="form-control"
+                      placeholder="+1 (999)999-9999 "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="description"
+                  id="siteDesciption"
+                  rows="3"
+                  placeholder="A brief description of the project. This should include deadline. color scheme. Any other details you think might be important"
+                ></textarea>
+              </div>
+              <div class="btn-group btn-block">
+                <a role="button" class="btn btn-primary btn-block">
+                  Submit Request
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ultimateModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Ultimate Package</h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="text-justify">
+              <div class="form-group form-group-lg">
+                <label class="form-check-label">
+                  Pages:
+                </label>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="onePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="onePageCheck" class="form-check-label">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="twoPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="twoPageCheck" class="form-check-label">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="threePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="threePageCheck" class="form-check-label">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="fourPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="fourPageCheck" class="form-check-label">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="fivePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="fivePageCheck" class="form-check-label">5</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="sixPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="sixPageCheck" class="form-check-label">6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="sevenPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="sevenPageCheck" class="form-check-label">7</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="eightPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="eightPageCheck" class="form-check-label">8</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="ninePageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="ninePageCheck" class="form-check-label">9</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    id="tenPageCheck"
+                    name="pages"
+                    type="radio"
+                    class="form-check-input"
+                  />
+                  <label for="tenPageCheck" class="form-check-label">10</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="cssCheck"
+                    class="form-check-input"
+                    id="cssCheck"
+                    checked
+                    disabled
+                  />
+                  <label for="cssCheck" class="form-check-label">Styling</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="jsCheck"
+                    class="form-check-input"
+                    id="jsCheck"
+                    checked
+                    disabled
+                  />
+                  <label for="jsCheck" class="form-check-label"
+                    >JavaScript</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    name="databaseCheck"
+                    class="form-check-input"
+                    id="databaseCheck"
+                    checked
+                  />
+                  <label for="databaseCheck" class="form-check-label"
+                    >database</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="lastName"
+                      id="lastName"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="companyName"
+                      id="companyName"
+                      class="form-control"
+                      placeholder="Company Name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="companyWebsite"
+                      id="companyWebsite"
+                      class="form-control"
+                      placeholder="Company Website"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="email@email.com"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      name="phoneNumber"
+                      id="phoneNumber"
+                      class="form-control"
+                      placeholder="+1 (999)999-9999 "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="description"
+                  id="siteDesciption"
+                  rows="3"
+                  placeholder="A brief description of the project. This should include deadline. color scheme. Any other details you think might be important"
+                ></textarea>
+              </div>
+              <div class="btn-group btn-block">
+                <a role="button" class="btn btn-primary btn-block">
+                  Submit Request
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4">
+      <a class="navbar-brand text-center" href="#">
+        <h4 class="mr-0">Fordorth</h4>
+        <small class="">Webdesign</small></a
+      >
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Submit Request</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a
+                role="button"
+                class="dropdown-item"
+                data-toggle="modal"
+                data-target="#valueModal"
+                >Value Package</a
+              >
+              <a
+                class="dropdown-item"
+                data-toggle="modal"
+                data-target="#premiumModal"
+                >Premium Package</a
+              >
+              <a
+                class="dropdown-item"
+                data-toggle="modal"
+                data-target="#ultimateModal"
+                >Ultimate Package</a
+              >
+              <a class="dropdown-item" href="#">Custom Package</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="packageCards" class="container">
+      <div class="card-deck">
+        <div class="card shadow">
+          <h3 class="card-header text-center">
+            Value Package
+          </h3>
+          <div class="card-body">
+            <h4 class="card-title text-center">Static Web Site</h4>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item card-text">3 Pages</li>
+              <li class="list-group-item card-text">1 Style Sheet</li>
+              <li class="list-group-item card-text">1 JavaScript page</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <ul class="list-group text-center">
+              <li class="list-group-item list-group-item-info">
+                $75
+              </li>
+            </ul>
+            <a
+              role="button"
+              data-toggle="modal"
+              data-target="#valueModal"
+              class="btn btn-info btn-block mt-2"
+              >Request</a
+            >
+          </div>
+        </div>
+        <div class="card shadow">
+          <h3 class="card-header text-center">
+            Premium Package
+          </h3>
+          <div class="card-body">
+            <h4 class="card-title text-center">Static Web Site</h4>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item card-text">up to 5 pages</li>
+              <li class="list-group-item card-text">1 Style Sheet</li>
+              <li class="list-group-item card-text">1 JavaScript page</li>
+              <li class="list-group-item card-text">Database Connection</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <ul class="list-group text-center">
+              <li class="list-group-item list-group-item-info">
+                $150
+              </li>
+            </ul>
+            <a
+              role="button"
+              data-toggle="modal"
+              data-target="#premiumModal"
+              class="btn btn-info btn-block mt-2"
+              >Request</a
+            >
+          </div>
+        </div>
+        <div class="card shadow">
+          <h3 class="card-header text-center">
+            Ultimate Package
+          </h3>
+          <div class="card-body">
+            <h4 class="card-title text-center">Dynamic Web Site</h4>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item card-text">10 navigation options</li>
+              <li class="list-group-item card-text">1 Style Sheet</li>
+              <li class="list-group-item card-text">1 JavaScript page</li>
+              <li class="list-group-item card-text">Database Connection</li>
+              <li class="list-group-item card-text">React</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <ul class="list-group text-center">
+              <li class="list-group-item list-group-item-info">
+                $250
+              </li>
+            </ul>
+            <a
+              role="button"
+              data-toggle="modal"
+              data-target="#ultimateModal"
+              class="btn btn-info btn-block mt-2"
+              >Request</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer bg-transparent">
+      <div class="container">
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-12 text-center">
+            &copy; Fordorth Labs
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

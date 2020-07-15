@@ -1,0 +1,48 @@
+{
+  "name": "freelance-webdesign",
+  "version": "0.1.0",
+  "description": "Fordorh's Freelance Webdsign Site",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "grunt": "^1.2.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-sass": "^3.1.0",
+    "grunt-usemin": "^3.1.1",
+    "htmlmin": "0.0.7",
+    "jit-grunt": "^0.10.0",
+    "rimraf": "^2.6.2",
+    "time-grunt": "^2.0.0",
+    "uglify-js": "^3.10.0",
+    "usemin-cli": "^0.6.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firebird2552/freelance-website.git"
+  },
+  "author": "Fordorth - Thomas Gould",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firebird2552/freelance-website/issues"
+  },
+  "homepage": "https://github.com/firebird2552/freelance-website#readme"
+}
